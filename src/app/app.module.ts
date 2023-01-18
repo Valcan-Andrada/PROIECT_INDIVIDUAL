@@ -7,10 +7,8 @@ import { DetailsComponent } from './details/details.component';
 import { HistoricComponent } from './historic/historic.component';
 import { GradesComponent } from './grades/grades.component';
 import { MenuComponent } from './menu/menu.component';
-import {HttpClientModule} from "@angular/common/http";
-import {UserLoginService} from "./services/user-login";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-
+import {FormsModule} from "@angular/forms";
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
@@ -19,16 +17,15 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     DetailsComponent,
     HistoricComponent,
     GradesComponent,
-    MenuComponent
+    MenuComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
   ],
-  providers: [UserLoginService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
